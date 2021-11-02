@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   form: {
     textAlign: "center",
   },
+  TextField: {
+    width: 300,
+  }
 }));
 
 const SignUp = () => {
@@ -75,8 +78,9 @@ const SignUp = () => {
             autoComplete="off"
           >
             <Grid container spacing={2}>
-              <Grid item xs={4}>
+              <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="text"
                   label="Name"
                   name="name"
@@ -84,16 +88,18 @@ const SignUp = () => {
                   required
                 />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   label="Lastname"
                   name="lastname"
                   onChange={handleChange}
                   required
                 />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="text"
                   label="Username"
                   name="username"
@@ -102,8 +108,9 @@ const SignUp = () => {
                 />
               </Grid>
 
-              <Grid item xs={4}>
+              <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="email"
                   label="Email address"
                   name="email"
@@ -111,8 +118,9 @@ const SignUp = () => {
                   required
                 />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="password"
                   label="Password"
                   name="password"
@@ -120,8 +128,9 @@ const SignUp = () => {
                   required
                 />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="password"
                   label="Confirm Password"
                   name="confirmPassword"

@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
   form: {
     textAlign: "center",
   },
+  TextField: {
+    width: 300,
+  }
 }));
 
 const SignIn = () => {
@@ -48,6 +51,7 @@ const SignIn = () => {
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="email"
                   label="Email address"
                   name="email"
@@ -56,6 +60,7 @@ const SignIn = () => {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  className = {classes.TextField}
                   type="password"
                   label="Password"
                   name="password"
