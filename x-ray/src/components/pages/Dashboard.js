@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Dashboard() {
   return (
     <>
-      <h1>dash board</h1>
+      <h1>HOME</h1>
       <Link to="/signup">
         <Button variant="outlined" size="large" type="button">
           Sign up
